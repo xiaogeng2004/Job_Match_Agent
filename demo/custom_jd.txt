@@ -1,0 +1,9 @@
+岗位职责：
+负责数据仓库和实时数据管道建设，完成离线与实时 ETL 开发。
+
+任职要求：
+熟悉 SQL、Python、Spark、Flink、Hive 和 Kafka，了解数据湖与数据治理。
+
+加分项：
+有 Doris、ClickHouse 或 StarRocks 使用经验者优先。
+

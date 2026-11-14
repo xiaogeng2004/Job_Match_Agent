@@ -1,0 +1,130 @@
+[
+  {
+    "id": "backend-java-campus",
+    "role_family": "backend",
+    "employment_types": ["校招"],
+    "max_experience_years": 0,
+    "target_skills": ["java", "sql_database", "backend_api", "linux"],
+    "resume_text": "本科计算机专业，熟悉 Java、Spring、MySQL、SQL、Linux 和 Git。参与课程项目开发 REST API，并使用单元测试验证接口。"
+  },
+  {
+    "id": "backend-python-service",
+    "role_family": "backend",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["python", "sql_database", "backend_api", "linux", "docker"],
+    "resume_text": "计算机专业，熟悉 Python、Flask、REST API、MySQL、Redis、Linux、Docker 和 Git，有服务端接口和缓存开发经验。"
+  },
+  {
+    "id": "frontend-react-campus",
+    "role_family": "frontend",
+    "employment_types": ["校招"],
+    "max_experience_years": 0,
+    "target_skills": ["javascript_typescript", "html_css", "react_vue", "browser_http"],
+    "resume_text": "软件工程专业，熟悉 JavaScript、TypeScript、HTML、CSS、React 和 Vue3，参与过响应式页面、组件库和前端接口联调。"
+  },
+  {
+    "id": "frontend-engineering",
+    "role_family": "frontend",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["javascript_typescript", "frontend_engineering", "browser_http", "git"],
+    "resume_text": "熟悉 TypeScript、React、HTTP、浏览器原理、Webpack、Vite、Git 和前端性能优化，有组件工程化与线上问题排查经验。"
+  },
+  {
+    "id": "algorithm-machine-learning",
+    "role_family": "algorithm",
+    "employment_types": ["校招", "实习"],
+    "max_experience_years": 1,
+    "target_skills": ["python", "machine_learning", "data_statistics", "pytorch_tensorflow"],
+    "resume_text": "人工智能专业，熟悉 Python、pandas、scikit-learn、PyTorch、机器学习和统计分析，完成分类模型训练、特征工程和模型评估。"
+  },
+  {
+    "id": "algorithm-multimodal",
+    "role_family": "algorithm",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["python", "c_cpp", "deep_learning", "nlp_cv", "pytorch_tensorflow"],
+    "resume_text": "计算机视觉方向，熟悉 Python、C++、深度学习、PyTorch、Transformer、目标检测和多模态模型训练与推理优化。"
+  },
+  {
+    "id": "embedded-rtos",
+    "role_family": "embedded",
+    "employment_types": ["校招", "实习"],
+    "max_experience_years": 1,
+    "target_skills": ["c_cpp", "mcu_arm", "rtos", "embedded_protocols"],
+    "resume_text": "电子信息工程专业，熟悉 C/C++、STM32、ARM Cortex-M、FreeRTOS、UART、SPI、I2C 和 CAN，完成外设驱动和通信协议项目。"
+  },
+  {
+    "id": "embedded-linux",
+    "role_family": "embedded",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["c_cpp", "embedded_linux", "firmware_driver", "embedded_protocols"],
+    "resume_text": "熟悉 C/C++、Linux 驱动、BSP、固件开发、ARM、UART、SPI 和 Ethernet，能够使用示波器和逻辑分析仪完成软硬件联调。"
+  },
+  {
+    "id": "data-analysis-bi",
+    "role_family": "data_analysis",
+    "employment_types": ["校招", "实习"],
+    "max_experience_years": 1,
+    "target_skills": ["sql_database", "python", "data_visualization", "statistics_experiments"],
+    "resume_text": "统计学专业，熟悉 SQL、Python、Excel、Tableau、Power BI、A/B 测试和指标体系，能够搭建 Dashboard 并输出数据分析报告。"
+  },
+  {
+    "id": "data-analysis-business",
+    "role_family": "data_analysis",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["data_statistics", "data_visualization", "statistics_experiments", "communication"],
+    "resume_text": "具备商业分析经验，熟悉 SQL、Excel、Tableau、数据洞察、指标体系建设、用户分层和经营分析，能够与业务团队协作推进策略。"
+  },
+  {
+    "id": "data-engineering-realtime",
+    "role_family": "data_engineering",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["sql_database", "big_data", "etl_warehouse", "python"],
+    "resume_text": "熟悉 SQL、Python、Spark、Flink、Kafka、Hive、ETL 和实时数仓开发，参与过离线与实时数据管道建设。"
+  },
+  {
+    "id": "data-engineering-warehouse",
+    "role_family": "data_engineering",
+    "employment_types": ["社招"],
+    "max_experience_years": 5,
+    "target_skills": ["etl_warehouse", "sql_database", "big_data", "git"],
+    "resume_text": "有数据仓库开发经验，熟悉维度建模、ETL、SQL、Hive、Spark、Doris、数据质量和 Git，能够维护离线及实时数仓任务。"
+  },
+  {
+    "id": "test-automation",
+    "role_family": "test_development",
+    "employment_types": ["校招"],
+    "max_experience_years": 1,
+    "target_skills": ["automation_testing", "python", "browser_http", "ci_cd"],
+    "resume_text": "计算机专业，熟悉 Python、pytest、Selenium、接口测试、性能测试、HTTP、Linux 和 CI/CD，开发过自动化测试脚本。"
+  },
+  {
+    "id": "test-platform",
+    "role_family": "test_development",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["python", "java", "automation_testing", "ci_cd"],
+    "resume_text": "有测试平台开发经验，熟悉 Python、Java、pytest、JMeter、自动化测试、测试框架、CI/CD 和接口测试。"
+  },
+  {
+    "id": "cloud-sre",
+    "role_family": "cloud_native_sre",
+    "employment_types": ["社招"],
+    "max_experience_years": 3,
+    "target_skills": ["linux", "kubernetes", "observability", "iac"],
+    "resume_text": "熟悉 Linux、Docker、Kubernetes、Prometheus、Grafana、Terraform、Shell 和 CI/CD，有云原生平台监控与自动化运维经验。"
+  },
+  {
+    "id": "cloud-devops",
+    "role_family": "cloud_native_sre",
+    "employment_types": ["社招"],
+    "max_experience_years": 5,
+    "target_skills": ["linux", "kubernetes", "ci_cd", "cloud_platform"],
+    "resume_text": "有 DevOps 经验，熟悉 Linux、Kubernetes、Jenkins、GitLab CI、阿里云、Prometheus、Docker 和基础设施自动化。"
+  }
+]

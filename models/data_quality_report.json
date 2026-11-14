@@ -1,0 +1,41 @@
+{
+  "raw_records": 307,
+  "clean_records": 307,
+  "matchable_records": 222,
+  "role_counts": {
+    "algorithm": 46,
+    "backend": 49,
+    "cloud_native_sre": 32,
+    "data_analysis": 33,
+    "data_engineering": 32,
+    "embedded": 42,
+    "frontend": 42,
+    "test_development": 31
+  },
+  "freshness_counts": {
+    "fresh": 221,
+    "stale": 67,
+    "recent": 19
+  },
+  "quality_status_counts": {
+    "ok": 222,
+    "exclude": 85
+  },
+  "active_status_counts": {
+    "active": 224,
+    "expired": 82,
+    "unknown": 1
+  },
+  "duplicate_ids": [
+    "BULK-TCK-DA-001"
+  ],
+  "multi_role_ids": [
+    "HBK-AL-011",
+    "HBK-BA-017",
+    "HBK-CL-010",
+    "HBK-DA-006",
+    "HBK-EM-010"
+  ],
+  "removed_leading_punctuation": 113,
+  "missing_preferred_qualifications": 298
+}

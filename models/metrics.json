@@ -1,0 +1,625 @@
+{
+  "dataset_size": 134,
+  "library_size": 222,
+  "raw_training_size": 222,
+  "max_samples_per_company_role": 4,
+  "labels": [
+    "algorithm",
+    "backend",
+    "cloud_native_sre",
+    "data_analysis",
+    "data_engineering",
+    "embedded",
+    "frontend",
+    "test_development"
+  ],
+  "excluded_classes": {},
+  "minimum_samples_per_class": 5,
+  "validation": "grouped 5-fold cross-validation by company",
+  "baseline": {
+    "model": "tfidf_naive_bayes",
+    "accuracy": 0.5,
+    "macro_f1": 0.3844,
+    "weighted_f1": 0.4477,
+    "classification_report": {
+      "algorithm": {
+        "precision": 1.0,
+        "recall": 0.26666666666666666,
+        "f1-score": 0.42105263157894735,
+        "support": 15.0
+      },
+      "backend": {
+        "precision": 0.8125,
+        "recall": 0.6190476190476191,
+        "f1-score": 0.7027027027027027,
+        "support": 21.0
+      },
+      "cloud_native_sre": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 9.0
+      },
+      "data_analysis": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1-score": 0.3333333333333333,
+        "support": 15.0
+      },
+      "data_engineering": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "embedded": {
+        "precision": 0.29545454545454547,
+        "recall": 1.0,
+        "f1-score": 0.45614035087719296,
+        "support": 26.0
+      },
+      "frontend": {
+        "precision": 0.9047619047619048,
+        "recall": 0.95,
+        "f1-score": 0.926829268292683,
+        "support": 20.0
+      },
+      "test_development": {
+        "precision": 1.0,
+        "recall": 0.13333333333333333,
+        "f1-score": 0.23529411764705882,
+        "support": 15.0
+      },
+      "accuracy": 0.5,
+      "macro avg": {
+        "precision": 0.6265895562770563,
+        "recall": 0.3961309523809523,
+        "f1-score": 0.3844190505539897,
+        "support": 134.0
+      },
+      "weighted avg": {
+        "precision": 0.6555190766944499,
+        "recall": 0.5,
+        "f1-score": 0.4477477051030413,
+        "support": 134.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        13,
+        0,
+        0,
+        0,
+        7,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        3,
+        0,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        2
+      ]
+    ]
+  },
+  "main_model": {
+    "model": "tfidf_logistic_regression",
+    "accuracy": 0.8657,
+    "macro_f1": 0.855,
+    "weighted_f1": 0.8626,
+    "classification_report": {
+      "algorithm": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1-score": 0.8,
+        "support": 15.0
+      },
+      "backend": {
+        "precision": 0.9411764705882353,
+        "recall": 0.7619047619047619,
+        "f1-score": 0.8421052631578947,
+        "support": 21.0
+      },
+      "cloud_native_sre": {
+        "precision": 1.0,
+        "recall": 0.5555555555555556,
+        "f1-score": 0.7142857142857143,
+        "support": 9.0
+      },
+      "data_analysis": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9333333333333333,
+        "support": 15.0
+      },
+      "data_engineering": {
+        "precision": 1.0,
+        "recall": 0.9230769230769231,
+        "f1-score": 0.96,
+        "support": 13.0
+      },
+      "embedded": {
+        "precision": 0.7428571428571429,
+        "recall": 1.0,
+        "f1-score": 0.8524590163934426,
+        "support": 26.0
+      },
+      "frontend": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 20.0
+      },
+      "test_development": {
+        "precision": 0.8461538461538461,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.7857142857142857,
+        "support": 15.0
+      },
+      "accuracy": 0.8656716417910447,
+      "macro avg": {
+        "precision": 0.8965764627529333,
+        "recall": 0.8384004884004884,
+        "f1-score": 0.8550348206582029,
+        "support": 134.0
+      },
+      "weighted avg": {
+        "precision": 0.880247145304213,
+        "recall": 0.8656716417910447,
+        "f1-score": 0.8626123113018661,
+        "support": 134.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        16,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        5,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        26,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        11
+      ]
+    ]
+  },
+  "random_validation_reference": {
+    "baseline": {
+      "model": "tfidf_naive_bayes",
+      "accuracy": 0.5448,
+      "macro_f1": 0.4354,
+      "weighted_f1": 0.491,
+      "classification_report": {
+        "algorithm": {
+          "precision": 1.0,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.42105263157894735,
+          "support": 15.0
+        },
+        "backend": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5714285714285714,
+          "support": 21.0
+        },
+        "cloud_native_sre": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 9.0
+        },
+        "data_analysis": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 15.0
+        },
+        "data_engineering": {
+          "precision": 1.0,
+          "recall": 0.15384615384615385,
+          "f1-score": 0.26666666666666666,
+          "support": 13.0
+        },
+        "embedded": {
+          "precision": 0.36619718309859156,
+          "recall": 1.0,
+          "f1-score": 0.5360824742268041,
+          "support": 26.0
+        },
+        "frontend": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1-score": 0.9523809523809523,
+          "support": 20.0
+        },
+        "test_development": {
+          "precision": 1.0,
+          "recall": 0.13333333333333333,
+          "f1-score": 0.23529411764705882,
+          "support": 15.0
+        },
+        "accuracy": 0.5447761194029851,
+        "macro avg": {
+          "precision": 0.7219110115236875,
+          "recall": 0.4442307692307692,
+          "f1-score": 0.4353631767411251,
+          "support": 134.0
+        },
+        "weighted avg": {
+          "precision": 0.717932424943146,
+          "recall": 0.5447761194029851,
+          "f1-score": 0.49102709912367704,
+          "support": 134.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          2,
+          0,
+          0,
+          0,
+          8,
+          1,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          6,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          5,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          2,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          11,
+          0,
+          2
+        ]
+      ]
+    },
+    "main_model": {
+      "model": "tfidf_logistic_regression",
+      "accuracy": 0.8358,
+      "macro_f1": 0.8142,
+      "weighted_f1": 0.8315,
+      "classification_report": {
+        "algorithm": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8,
+          "f1-score": 0.8275862068965517,
+          "support": 15.0
+        },
+        "backend": {
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.8333333333333334,
+          "support": 21.0
+        },
+        "cloud_native_sre": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.625,
+          "support": 9.0
+        },
+        "data_analysis": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.8484848484848485,
+          "support": 15.0
+        },
+        "data_engineering": {
+          "precision": 0.9090909090909091,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.8333333333333334,
+          "support": 13.0
+        },
+        "embedded": {
+          "precision": 0.7428571428571429,
+          "recall": 1.0,
+          "f1-score": 0.8524590163934426,
+          "support": 26.0
+        },
+        "frontend": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1-score": 0.9523809523809523,
+          "support": 20.0
+        },
+        "test_development": {
+          "precision": 0.8333333333333334,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.7407407407407407,
+          "support": 15.0
+        },
+        "accuracy": 0.835820895522388,
+        "macro avg": {
+          "precision": 0.8429473304473305,
+          "recall": 0.8048840048840049,
+          "f1-score": 0.8141648039454004,
+          "support": 134.0
+        },
+        "weighted avg": {
+          "precision": 0.8490049751243781,
+          "recall": 0.835820895522388,
+          "f1-score": 0.8315079384254777,
+          "support": 134.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          15,
+          0,
+          0,
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          5,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          3,
+          0,
+          10
+        ]
+      ]
+    }
+  }
+}

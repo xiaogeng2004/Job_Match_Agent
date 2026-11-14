@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JobMatch Agent</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="/">岗位匹配</a>
+      <nav class="topnav" aria-label="主导航">
+        <a class="active" href="#workspace">匹配分析</a>
+        <a href="#method">评分方法</a>
+      </nav>
+    </header>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">简历与岗位分析</div>
+        <h1>简历匹配与技能差距</h1>
+        <p>输入简历和求职条件，查看岗位匹配结果、技能缺口与对应原文依据。</p>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="job-count">40</strong><span>本地岗位</span></div>
+        <div><strong id="role-count">8</strong><span>岗位方向</span></div>
+        <div><strong id="skill-count">--</strong><span>技能标签</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="workspace" class="workspace card">
+        <div class="section-heading">
+          <div>
+            <span class="step">01</span>
+            <h2>输入你的求职资料</h2>
+          </div>
+          <div class="sample-actions">
+            <span id="sample-status" class="muted">可切换 3 种示例</span>
+            <button class="ghost-button" id="sample-button" type="button">加载示例简历</button>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="resume-panel">
+            <label for="resume-text">简历文本</label>
+            <textarea id="resume-text" placeholder="粘贴教育背景、项目经历、实习经历、技能等内容……"></textarea>
+            <div class="file-row">
+              <label class="file-button">
+                上传 PDF / DOCX / TXT
+                <input id="resume-file" type="file" accept=".pdf,.docx,.txt">
+              </label>
+              <span id="file-name">未选择文件</span>
+            </div>
+          </div>
+
+          <div class="preference-panel">
+            <fieldset>
+              <legend>目标岗位方向</legend>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="backend" checked>
+                <span><strong>后端开发</strong><small>服务端 · 数据库 · API</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="frontend" checked>
+                <span><strong>前端开发</strong><small>Web · React/Vue · 浏览器</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="algorithm" checked>
+                <span><strong>算法工程师</strong><small>机器学习 · 深度学习</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="embedded" checked>
+                <span><strong>嵌入式开发</strong><small>MCU · 固件 · RTOS</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="data_analysis" checked>
+                <span><strong>数据分析</strong><small>SQL · BI · 指标体系</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="data_engineering" checked>
+                <span><strong>数据开发</strong><small>ETL · 数仓 · Spark/Flink</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="test_development" checked>
+                <span><strong>测试开发</strong><small>自动化 · 测试平台 · CI/CD</small></span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="role" value="cloud_native_sre" checked>
+                <span><strong>云原生 / SRE</strong><small>Kubernetes · 监控 · DevOps</small></span>
+              </label>
+            </fieldset>
+
+            <label class="field-label" for="top-n">展示岗位数量</label>
+            <select id="top-n">
+              <option value="5">Top 5</option>
+              <option value="10" selected>Top 10</option>
+              <option value="20">Top 20</option>
+            </select>
+
+            <div class="filter-grid">
+              <label>
+                <span class="field-label">城市</span>
+                <input id="city-filter" type="text" list="city-options" placeholder="如：上海">
+              </label>
+              <label>
+                <span class="field-label">招聘类型</span>
+                <select id="employment-filter">
+                  <option value="">全部</option>
+                  <option value="实习">实习</option>
+                  <option value="校招">校招</option>
+                  <option value="社招">社招</option>
+                </select>
+              </label>
+              <label>
+                <span class="field-label">经验要求</span>
+                <select id="experience-filter">
+                  <option value="">不限</option>
+                  <option value="0">应届/在校</option>
+                  <option value="1">1 年以内</option>
+                  <option value="3">3 年以内</option>
+                  <option value="5">5 年以内</option>
+                </select>
+              </label>
+              <label>
+                <span class="field-label">发布时间</span>
+                <select id="freshness-filter">
+                  <option value="1y">近一年</option>
+                  <option value="2y" selected>近两年</option>
+                  <option value="all">全部有效数据</option>
+                </select>
+              </label>
+            </div>
+            <datalist id="city-options"></datalist>
+
+            <details class="custom-jd">
+              <summary>分析一段自定义 JD（可选）</summary>
+              <textarea id="custom-jd" placeholder="粘贴岗位职责和任职要求，Agent 会预测岗位方向并计算技能差距。"></textarea>
+            </details>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <p>简历不会写入磁盘。结果仅用于求职准备，不代表录用概率。</p>
+          <button class="primary-button" id="analyze-button" type="button">
+            <span class="button-label">开始分析</span>
+            <span class="button-loader"></span>
+          </button>
+        </div>
+        <div id="error-box" class="error-box" hidden></div>
+      </section>
+
+      <section id="job-browser" class="card job-browser">
+        <div class="section-heading">
+          <div>
+            <span class="step">岗位库</span>
+            <h2>浏览有效岗位</h2>
+          </div>
+          <button class="ghost-button" id="browse-button" type="button">应用当前筛选</button>
+        </div>
+        <p class="browser-hint">不输入简历也可以浏览。当前只展示仍在招聘且通过完整性检查的岗位。</p>
+        <div id="browser-list" class="browser-list"></div>
+        <div class="browser-footer">
+          <span id="browser-status" class="muted">尚未加载</span>
+          <button class="ghost-button" id="load-more-button" type="button" hidden>加载更多</button>
+        </div>
+      </section>
+
+      <section id="results" class="results" hidden>
+        <div class="result-summary card">
+          <div>
+            <span class="step">02</span>
+            <h2>你的技能画像</h2>
+            <p id="summary-text"></p>
+          </div>
+          <div id="profile-skills" class="skill-cloud"></div>
+          <div id="privacy-warnings" class="notice-list"></div>
+        </div>
+
+        <div id="custom-result" class="card custom-result" hidden></div>
+
+        <div class="section-heading results-heading">
+          <div>
+            <span class="step">03</span>
+            <h2>推荐岗位</h2>
+          </div>
+          <span id="result-meta" class="muted"></span>
+        </div>
+        <div id="job-list" class="job-list"></div>
+
+        <div id="method" class="method-note card">
+          <strong>如何计算匹配分？</strong>
+          <span>综合必备技能覆盖、命中强度、方向核心能力、文本相似度、模型方向一致度和可选加分技能；缺失字段会自动重新归一化。</span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+

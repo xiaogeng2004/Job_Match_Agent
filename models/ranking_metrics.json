@@ -1,0 +1,220 @@
+{
+  "query_count": 16,
+  "eligible_query_count": 9,
+  "reviewed_pair_count": 29,
+  "excluded_small_candidate_queries": [
+    "algorithm-machine-learning",
+    "backend-java-campus",
+    "data-analysis-bi",
+    "embedded-linux",
+    "embedded-rtos",
+    "frontend-react-campus",
+    "test-automation"
+  ],
+  "label_method": "skill_overlap_silver_labels_with_ai_assisted_review",
+  "label_grades": {
+    "2": "至少命中 2 个目标技能，且必备技能覆盖不低于 25%",
+    "1": "至少命中 1 个目标技能，且必备技能覆盖不低于 10%",
+    "0": "未命中目标技能"
+  },
+  "metrics": {
+    "keyword": {
+      "precision_at_3": 0.9259,
+      "recall_at_5": 0.3939,
+      "ndcg_at_5": 0.8927
+    },
+    "tfidf": {
+      "precision_at_3": 0.963,
+      "recall_at_5": 0.3989,
+      "ndcg_at_5": 0.8948
+    },
+    "agent_hybrid": {
+      "precision_at_3": 1.0,
+      "recall_at_5": 0.3984,
+      "ndcg_at_5": 0.9291
+    }
+  },
+  "queries": [
+    {
+      "query_id": "backend-java-campus",
+      "role_family": "backend",
+      "candidate_count": 0,
+      "relevant_count": 0,
+      "agent_top_5": []
+    },
+    {
+      "query_id": "backend-python-service",
+      "role_family": "backend",
+      "candidate_count": 21,
+      "relevant_count": 18,
+      "agent_top_5": [
+        "TCR-BA-003",
+        "TCR-BA-010",
+        "TC-BA-01",
+        "TCR-BA-002",
+        "TCK-BA-001"
+      ]
+    },
+    {
+      "query_id": "frontend-react-campus",
+      "role_family": "frontend",
+      "candidate_count": 0,
+      "relevant_count": 0,
+      "agent_top_5": []
+    },
+    {
+      "query_id": "frontend-engineering",
+      "role_family": "frontend",
+      "candidate_count": 8,
+      "relevant_count": 7,
+      "agent_top_5": [
+        "TCK-FR-001",
+        "TC-FR-02",
+        "TC-FR-01",
+        "TC-FR-05",
+        "TC-FR-04"
+      ]
+    },
+    {
+      "query_id": "algorithm-machine-learning",
+      "role_family": "algorithm",
+      "candidate_count": 4,
+      "relevant_count": 4,
+      "agent_top_5": [
+        "GXI-AL-001",
+        "algorithm-003",
+        "algorithm-001",
+        "algorithm-002"
+      ]
+    },
+    {
+      "query_id": "algorithm-multimodal",
+      "role_family": "algorithm",
+      "candidate_count": 22,
+      "relevant_count": 18,
+      "agent_top_5": [
+        "TC-AL-08",
+        "TCK-AL-001",
+        "TC-AL-10",
+        "TC-AL-06",
+        "TC-AL-04"
+      ]
+    },
+    {
+      "query_id": "embedded-rtos",
+      "role_family": "embedded",
+      "candidate_count": 0,
+      "relevant_count": 0,
+      "agent_top_5": []
+    },
+    {
+      "query_id": "embedded-linux",
+      "role_family": "embedded",
+      "candidate_count": 0,
+      "relevant_count": 0,
+      "agent_top_5": []
+    },
+    {
+      "query_id": "data-analysis-bi",
+      "role_family": "data_analysis",
+      "candidate_count": 1,
+      "relevant_count": 1,
+      "agent_top_5": [
+        "data_analysis-001"
+      ]
+    },
+    {
+      "query_id": "data-analysis-business",
+      "role_family": "data_analysis",
+      "candidate_count": 10,
+      "relevant_count": 10,
+      "agent_top_5": [
+        "TCK-DA-009",
+        "TCK-DA-010",
+        "TCK-DA-007",
+        "TCK-DA-008",
+        "TCK-DA-011"
+      ]
+    },
+    {
+      "query_id": "data-engineering-realtime",
+      "role_family": "data_engineering",
+      "candidate_count": 15,
+      "relevant_count": 13,
+      "agent_top_5": [
+        "data_engineering-001",
+        "BULK-TCK-DA-002",
+        "BULK-TCK-DA-003",
+        "BULK-TCK-DA-005",
+        "BULK-TCK-DA-004"
+      ]
+    },
+    {
+      "query_id": "data-engineering-warehouse",
+      "role_family": "data_engineering",
+      "candidate_count": 19,
+      "relevant_count": 15,
+      "agent_top_5": [
+        "BULK-TCK-DA-005",
+        "data_engineering-001",
+        "BULK-TCK-DA-002",
+        "TCK-DA-012",
+        "BULK-TCK-DA-011"
+      ]
+    },
+    {
+      "query_id": "test-automation",
+      "role_family": "test_development",
+      "candidate_count": 0,
+      "relevant_count": 0,
+      "agent_top_5": []
+    },
+    {
+      "query_id": "test-platform",
+      "role_family": "test_development",
+      "candidate_count": 15,
+      "relevant_count": 14,
+      "agent_top_5": [
+        "TCK-TE-001",
+        "TCK-TE-017",
+        "GX-TE-004",
+        "GX-TE-002",
+        "TCK-TE-006"
+      ]
+    },
+    {
+      "query_id": "cloud-sre",
+      "role_family": "cloud_native_sre",
+      "candidate_count": 16,
+      "relevant_count": 14,
+      "agent_top_5": [
+        "TCK-CL-007",
+        "sre-001",
+        "TCK-CL-003",
+        "TCK-CL-010",
+        "TCK-CL-006"
+      ]
+    },
+    {
+      "query_id": "cloud-devops",
+      "role_family": "cloud_native_sre",
+      "candidate_count": 18,
+      "relevant_count": 11,
+      "agent_top_5": [
+        "TCK-CL-003",
+        "sre-001",
+        "TCK-CL-010",
+        "TCK-CL-006",
+        "TCK-CL-009"
+      ]
+    }
+  ],
+  "limitations": [
+    "相关性标签由目标技能覆盖规则生成，不是完全独立的人工 gold set。",
+    "抽样结果经过 AI 辅助复核，但仍应由团队成员确认真实求职者偏好。"
+  ],
+  "manual_review_sample": {
+    "path": "C:\\Users\\耿帅\\Documents\\Codex\\2026-11-06\\new-chat-2\\outputs\\job_match_agent\\models\\relevance_review_template.csv",
+    "rows": 29
+  }
+}

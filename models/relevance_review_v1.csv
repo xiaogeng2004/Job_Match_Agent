@@ -1,0 +1,30 @@
+﻿query_id,role_family,jd_id,job_title,company,city,employment_type,target_skills,auto_grade,reviewer_grade,reviewer_notes,reviewer_type
+frontend-engineering,frontend,TCK-FR-001,腾讯AI网盘全栈开发高级工程师,腾讯,深圳,社招,"browser_http, frontend_engineering, git, javascript_typescript",2,2,前后端全栈岗位，前端技术栈与目标画像高度相关。,AI辅助复核，待学生确认
+backend-python-service,backend,TCR-BA-001,开放世界-游戏服务端开发-微服务/架构方向(上海),腾讯,杭州,社招,"backend_api, docker, linux, python, sql_database",1,2,服务端、微服务和后端技能与目标画像高度相关。,AI辅助复核，待学生确认
+data-engineering-realtime,data_engineering,TCK-DA-013,微信小游戏-数据开发工程师,腾讯,深圳,社招,"big_data, etl_warehouse, python, sql_database",2,2,数据开发岗位，覆盖大数据、数仓和 Python。,AI辅助复核，待学生确认
+data-engineering-realtime,data_engineering,BULK-TCK-DA-010,大数据产品经理（深圳/北京）,腾讯,深圳,社招,"big_data, etl_warehouse, python, sql_database",1,0,岗位为大数据产品经理，不属于数据开发。,AI辅助复核，待学生确认
+data-analysis-business,data_analysis,TCK-DA-002,腾讯会议-数据分析工程师,腾讯,深圳,社招,"communication, data_statistics, data_visualization, statistics_experiments",2,2,数据分析岗位，覆盖指标、可视化和 SQL 分析。,AI辅助复核，待学生确认
+algorithm-multimodal,algorithm,TCR-AL-012,微信-小微推荐算法工程师-广州,腾讯,北京,社招,"c_cpp, deep_learning, nlp_cv, python, pytorch_tensorflow",0,1,推荐算法与算法方向相关，但多模态和框架匹配有限。,AI辅助复核，待学生确认
+frontend-engineering,frontend,TC-FR-04,微信支付-全栈开发工程师,腾讯,深圳,社招,"browser_http, frontend_engineering, git, javascript_typescript",2,1,全栈岗位包含前端职责，但并非纯前端岗位。,AI辅助复核，待学生确认
+frontend-engineering,frontend,TC-FR-02,《无畏契约》-前端开发工程师-（AI & 创新互动方向）,腾讯,深圳,社招,"browser_http, frontend_engineering, git, javascript_typescript",2,2,前端开发岗位，技术栈和职责均直接匹配。,AI辅助复核，待学生确认
+test-platform,test_development,TCK-TE-011,魔方技术中心-服务器测试开发工程师,腾讯,深圳,社招,"automation_testing, ci_cd, java, python",1,1,服务器测试开发相关，但与通用测试平台方向部分偏离。,AI辅助复核，待学生确认
+backend-python-service,backend,TC-BA-09,微信-后台开发工程师-电商方向,腾讯,广州,社招,"backend_api, docker, linux, python, sql_database",2,1,后端岗位相关，但语言和电商技术栈只部分匹配。,AI辅助复核，待学生确认
+backend-python-service,backend,TCR-BA-011,微信-后台开发工程师-AI语音/模型服务方向,腾讯,北京,社招,"backend_api, docker, linux, python, sql_database",2,2,后台开发与 AI 服务方向，后端技能覆盖较高。,AI辅助复核，待学生确认
+frontend-engineering,frontend,TC-FR-05,微信小店-全栈开发工程师-交易基建方向,腾讯,广州,社招,"browser_http, frontend_engineering, git, javascript_typescript",1,1,交易基建全栈岗位，前端技能只覆盖一部分。,AI辅助复核，待学生确认
+data-analysis-business,data_analysis,TCK-DA-008,腾讯云-官网高级数据分析师,腾讯,深圳,社招,"communication, data_statistics, data_visualization, statistics_experiments",2,2,数据分析师岗位，BI 和业务分析要求直接匹配。,AI辅助复核，待学生确认
+data-analysis-business,data_analysis,TCK-DA-003,证券-数据产品经理-BI分析方向,腾讯,深圳,社招,"communication, data_statistics, data_visualization, statistics_experiments",2,1,BI 分析方向相关，但岗位主体是数据产品经理。,AI辅助复核，待学生确认
+cloud-devops,cloud_native_sre,TCK-CL-007,Agent Infra SRE工程师(Agent治理方向)(深圳/北京),腾讯,深圳,社招,"ci_cd, cloud_platform, kubernetes, linux",1,2,SRE 和 Agent 基础设施岗位，与云原生画像高度相关。,AI辅助复核，待学生确认
+cloud-devops,cloud_native_sre,TCK-CL-017,腾讯云-西南云原生销售经理,腾讯,成都,社招,"ci_cd, cloud_platform, kubernetes, linux",0,0,云原生销售经理不属于技术开发岗位。,AI辅助复核，待学生确认
+algorithm-multimodal,algorithm,TC-AL-01,风控算法工程师,腾讯,深圳,社招,"c_cpp, deep_learning, nlp_cv, python, pytorch_tensorflow",0,1,算法岗位相关，但风控方向与多模态画像存在偏差。,AI辅助复核，待学生确认
+data-engineering-warehouse,data_engineering,TCK-DA-016,腾讯云大数据迁移工具-高级开发工程师,腾讯,北京,社招,"big_data, etl_warehouse, git, sql_database",0,2,大数据工具开发岗位，数仓和大数据技能匹配。,AI辅助复核，待学生确认
+data-engineering-warehouse,data_engineering,BULK-TCK-DA-004,微信-大数据 Infra 开发工程师,腾讯,深圳,社招,"big_data, etl_warehouse, git, sql_database",1,2,大数据基础设施开发，和实时数据工程画像高度相关。,AI辅助复核，待学生确认
+data-engineering-warehouse,data_engineering,TCK-DA-019,腾讯云大数据-Data+AI 售前产品架构师,腾讯,深圳,社招,"big_data, etl_warehouse, git, sql_database",0,0,售前产品架构师不属于数据开发岗位。,AI辅助复核，待学生确认
+data-engineering-realtime,data_engineering,BULK-TCK-DA-005,微信基础-大数据工程师-AI方向,腾讯,广州,社招,"big_data, etl_warehouse, python, sql_database",2,2,大数据开发岗位，技术栈和职责匹配。,AI辅助复核，待学生确认
+data-analysis-business,data_analysis,TCK-DA-010,市场与用户研究经理-数据分析方向,腾讯,深圳,社招,"communication, data_statistics, data_visualization, statistics_experiments",2,1,数据分析和用户研究相关，但管理属性较重。,AI辅助复核，待学生确认
+cloud-devops,cloud_native_sre,sre-001,阿里云智能-SRE 工程师-上海,阿里云计算有限公司,上海,社招,"ci_cd, cloud_platform, kubernetes, linux",2,2,SRE 岗位，Linux、Kubernetes 和可观测性直接匹配。,AI辅助复核，待学生确认
+cloud-devops,cloud_native_sre,TCK-CL-014,腾讯云-云原生高级产品经理,腾讯,深圳,社招,"ci_cd, cloud_platform, kubernetes, linux",2,0,云原生产品经理，不具备目标技术岗位属性。,AI辅助复核，待学生确认
+data-engineering-realtime,data_engineering,BULK-TCK-DA-002,电商-数据仓库开发工程师,腾讯云智研发子公司,重庆,社招,"big_data, etl_warehouse, python, sql_database",2,2,数据仓库开发岗位，数仓、SQL 和大数据匹配。,AI辅助复核，待学生确认
+cloud-devops,cloud_native_sre,TCK-CL-010,腾讯云-云原生产品高级技术专家(容器/Agent方向),腾讯,深圳,社招,"ci_cd, cloud_platform, kubernetes, linux",2,1,容器与 Agent 技术专家相关，但岗位偏产品和专家综合职责。,AI辅助复核，待学生确认
+test-platform,test_development,TCK-TE-012,在研UE5射击手游-游戏测试开发工程师,腾讯,深圳,社招,"automation_testing, ci_cd, java, python",0,1,游戏测试开发相关，但技术栈和业务领域匹配有限。,AI辅助复核，待学生确认
+cloud-sre,cloud_native_sre,TCK-CL-008,AI Infra SRE 工程师(大模型推理)(深圳/北京),腾讯,深圳,社招,"iac, kubernetes, linux, observability",1,2,AI Infra SRE，Linux、Kubernetes 和可观测性匹配。,AI辅助复核，待学生确认
+backend-python-service,backend,TCR-BA-007,3D动作游戏《狩》-后台开发-UE5 DS后台开发,腾讯,北京,社招,"backend_api, docker, linux, python, sql_database",1,2,后台开发岗位，服务端和 Linux 技能与画像匹配。,AI辅助复核，待学生确认

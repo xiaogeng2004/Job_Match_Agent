@@ -1,0 +1,5 @@
+计算机科学与技术专业，本科。
+熟悉 Python、SQL、pandas、scikit-learn、Tableau 和 Power BI。
+在广告投放分析项目中完成数据清洗、指标体系建设、A/B 测试和可视化看板搭建，
+通过用户分层和转化漏斗分析定位低效投放渠道。熟悉 Excel、Linux 和 Git。
+

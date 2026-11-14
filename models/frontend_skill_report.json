@@ -1,0 +1,23 @@
+{
+  "skill": "frontend-design",
+  "source": "https://github.com/anthropics/claude-plugins-official",
+  "commit": "a1ecfbc7f138a0ef455088f7f28cda2d22a0f853",
+  "license": "Apache-2.0",
+  "checks": {
+    "skill_present": true,
+    "apache_license_present": true,
+    "central_color_tokens": true,
+    "spacing_tokens": true,
+    "radius_tokens": true,
+    "shadow_token": true,
+    "no_css_gradient": true,
+    "no_glow": true,
+    "keyboard_focus": true,
+    "reduced_motion": true,
+    "responsive_layout": true,
+    "single_page_heading": true,
+    "plain_text_brand": true,
+    "grayscale_check": true
+  },
+  "passed": true
+}

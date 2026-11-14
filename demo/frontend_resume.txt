@@ -1,0 +1,6 @@
+软件工程专业，本科。
+熟悉 JavaScript、TypeScript、HTML、CSS、React 和 Vue3。
+使用 React、TypeScript、Vite 和 Ant Design 开发过数据管理平台，
+负责组件设计、状态管理、接口联调和首屏性能优化。
+熟悉浏览器与 HTTP、Git、单元测试、ECharts 和 Webpack。
+

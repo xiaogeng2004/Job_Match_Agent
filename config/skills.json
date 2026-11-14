@@ -1,0 +1,381 @@
+{
+  "skills": [
+    {
+      "key": "python",
+      "name": "Python",
+      "category": "编程语言",
+      "technical": true,
+      "patterns": ["(?i)(?<![A-Za-z])python(?![A-Za-z])"]
+    },
+    {
+      "key": "java",
+      "name": "Java",
+      "category": "编程语言",
+      "technical": true,
+      "patterns": ["(?<![A-Za-z])Java(?![A-Za-z])", "(?i)(?<![A-Za-z])jvm(?![A-Za-z])"]
+    },
+    {
+      "key": "go",
+      "name": "Go",
+      "category": "编程语言",
+      "technical": true,
+      "patterns": ["\\bGolang\\b", "\\bGo\\b", "Go语言"]
+    },
+    {
+      "key": "c_cpp",
+      "name": "C/C++",
+      "category": "编程语言",
+      "technical": true,
+      "patterns": ["(?i)C\\+\\+", "C语言", "C\\s*/\\s*C\\+\\+"]
+    },
+    {
+      "key": "javascript_typescript",
+      "name": "JavaScript / TypeScript",
+      "category": "前端技术",
+      "technical": true,
+      "patterns": ["(?i)\\bJavaScript\\b", "(?i)\\bTypeScript\\b", "\\bJS\\b", "\\bTS\\b"]
+    },
+    {
+      "key": "html_css",
+      "name": "HTML / CSS",
+      "category": "前端技术",
+      "technical": true,
+      "patterns": ["(?i)HTML5?", "(?i)CSS3?"]
+    },
+    {
+      "key": "react_vue",
+      "name": "React / Vue",
+      "category": "前端框架",
+      "technical": true,
+      "patterns": ["(?i)\\bReact(?:\\.js)?\\b", "(?i)\\bVue(?:\\.js)?\\b", "(?i)Next\\.js", "(?i)Nuxt"]
+    },
+    {
+      "key": "browser_http",
+      "name": "浏览器与 HTTP",
+      "category": "前端基础",
+      "technical": true,
+      "patterns": ["(?i)\\bHTTP\\b", "浏览器", "(?i)\\bDOM\\b", "(?i)WebSocket", "(?i)REST(?:ful)?"]
+    },
+    {
+      "key": "frontend_engineering",
+      "name": "前端工程化",
+      "category": "前端工程",
+      "technical": true,
+      "patterns": ["(?i)Webpack", "(?i)Vite", "(?i)Rollup", "(?i)Babel", "前端工程化", "模块化", "组件化"]
+    },
+    {
+      "key": "sql_database",
+      "name": "SQL / 数据库",
+      "category": "数据与存储",
+      "technical": true,
+      "patterns": ["(?i)\\bSQL\\b", "(?i)MySQL", "(?i)PostgreSQL", "(?i)SQLite", "(?i)Oracle", "数据库", "(?i)SqlServer"]
+    },
+    {
+      "key": "redis_cache",
+      "name": "Redis / 缓存",
+      "category": "数据与存储",
+      "technical": true,
+      "patterns": ["(?i)\\bRedis\\b", "缓存"]
+    },
+    {
+      "key": "backend_api",
+      "name": "后端框架 / API",
+      "category": "后端工程",
+      "technical": true,
+      "patterns": ["(?i)Spring", "(?i)MyBatis", "(?i)Django", "(?i)Flask", "(?i)FastAPI", "(?i)\\bGin\\b", "(?i)Node\\.js", "后端", "后台", "服务端", "接口开发", "接口服务"]
+    },
+    {
+      "key": "linux",
+      "name": "Linux",
+      "category": "系统与工程",
+      "technical": true,
+      "patterns": ["(?i)\\bLinux\\b", "(?i)\\bUnix\\b"]
+    },
+    {
+      "key": "docker",
+      "name": "Docker / 容器",
+      "category": "系统与工程",
+      "technical": true,
+      "patterns": ["(?i)\\bDocker\\b", "(?i)\\bKubernetes\\b", "(?i)\\bK8s\\b", "容器化"]
+    },
+    {
+      "key": "distributed_backend",
+      "name": "消息队列 / 微服务",
+      "category": "后端工程",
+      "technical": true,
+      "patterns": ["(?i)Kafka", "(?i)RabbitMQ", "消息队列", "微服务", "分布式", "高并发", "负载均衡", "分库分表"]
+    },
+    {
+      "key": "git",
+      "name": "Git",
+      "category": "工程基础",
+      "technical": true,
+      "patterns": ["(?i)\\bGit\\b", "(?i)\\bGitHub\\b", "(?i)\\bGitLab\\b"]
+    },
+    {
+      "key": "testing",
+      "name": "软件测试",
+      "category": "工程基础",
+      "technical": true,
+      "patterns": ["单元测试", "集成测试", "自动化测试", "测试用例", "(?i)pytest", "(?i)JUnit"]
+    },
+    {
+      "key": "machine_learning",
+      "name": "机器学习",
+      "category": "算法能力",
+      "technical": true,
+      "patterns": ["机器学习", "(?i)scikit-learn", "(?i)sklearn", "(?i)XGBoost", "(?i)LightGBM", "随机森林", "逻辑回归", "(?i)SVM", "分类模型"]
+    },
+    {
+      "key": "deep_learning",
+      "name": "深度学习",
+      "category": "算法能力",
+      "technical": true,
+      "patterns": ["深度学习", "神经网络", "(?i)Transformer", "\\bCNN\\b", "\\bRNN\\b", "\\bLSTM\\b", "强化学习"]
+    },
+    {
+      "key": "nlp_cv",
+      "name": "NLP / CV / 多模态",
+      "category": "算法方向",
+      "technical": true,
+      "patterns": ["\\bNLP\\b", "自然语言处理", "计算机视觉", "图像识别", "目标检测", "\\bOCR\\b", "多模态", "推荐算法", "推荐系统", "搜索算法", "搜索引擎"]
+    },
+    {
+      "key": "pytorch_tensorflow",
+      "name": "PyTorch / TensorFlow",
+      "category": "算法框架",
+      "technical": true,
+      "patterns": ["(?i)PyTorch", "(?i)TensorFlow", "(?i)PaddlePaddle", "(?i)Paddle"]
+    },
+    {
+      "key": "data_statistics",
+      "name": "数据分析与统计",
+      "category": "数据能力",
+      "technical": true,
+      "patterns": ["(?i)pandas", "(?i)NumPy", "数据分析", "数据清洗", "统计", "特征工程", "数据挖掘", "\\bA/B\\b"]
+    },
+    {
+      "key": "distributed_training",
+      "name": "分布式训练 / GPU",
+      "category": "算法工程",
+      "technical": true,
+      "patterns": ["(?i)Megatron", "(?i)DeepSpeed", "分布式训练", "DP/TP/PP", "多机多卡", "\\bGPU\\b", "昇腾", "\\bNPU\\b"]
+    },
+    {
+      "key": "mcu_arm",
+      "name": "MCU / ARM",
+      "category": "嵌入式硬件",
+      "technical": true,
+      "patterns": ["(?i)STM32", "\\bARM\\b", "Cortex-M", "单片机", "\\bMCU\\b", "MSP430", "GD32"]
+    },
+    {
+      "key": "rtos",
+      "name": "RTOS",
+      "category": "嵌入式系统",
+      "technical": true,
+      "patterns": ["(?i)RTOS", "(?i)FreeRTOS", "(?i)RT-Thread", "实时操作系统"]
+    },
+    {
+      "key": "embedded_protocols",
+      "name": "嵌入式通信协议",
+      "category": "嵌入式系统",
+      "technical": true,
+      "patterns": ["\\bUART\\b", "\\bSPI\\b", "\\bI2C\\b", "\\bIIC\\b", "\\bCAN\\b", "EtherCAT", "Modbus", "以太网", "TCP/IP", "\\bUSB\\b"]
+    },
+    {
+      "key": "firmware_driver",
+      "name": "固件 / 驱动",
+      "category": "嵌入式系统",
+      "technical": true,
+      "patterns": ["驱动", "固件", "\\bBSP\\b", "底层软件", "(?i)Bootloader"]
+    },
+    {
+      "key": "embedded_linux",
+      "name": "嵌入式 Linux",
+      "category": "嵌入式系统",
+      "technical": true,
+      "patterns": ["嵌入式Linux", "Linux内核", "Linux驱动", "Linux C"]
+    },
+    {
+      "key": "hardware_debug",
+      "name": "硬件调试",
+      "category": "嵌入式硬件",
+      "technical": true,
+      "patterns": ["原理图", "示波器", "逻辑分析仪", "\\bPCB\\b", "硬件调试", "电路"]
+    },
+    {
+      "key": "data_visualization",
+      "name": "BI / 数据可视化",
+      "category": "数据分析",
+      "technical": true,
+      "patterns": ["(?:Tableau)", "(?:Power\\s*BI)", "(?:FineBI)", "(?:Superset)", "(?:Dashboard)", "(?:数据可视化)", "(?:可视化报表)", "(?:\\bBI\\b)"]
+    },
+    {
+      "key": "statistics_experiments",
+      "name": "统计与实验分析",
+      "category": "数据分析",
+      "technical": true,
+      "patterns": ["(?:统计学)", "(?:A/B\\s*测试)", "(?:AB\\s*测试)", "(?:指标体系)", "(?:数据洞察)", "(?:假设检验)", "(?:归因分析)"]
+    },
+    {
+      "key": "etl_warehouse",
+      "name": "ETL / 数据仓库",
+      "category": "数据工程",
+      "technical": true,
+      "patterns": ["(?i)\\bETL\\b", "(?i)\\bELT\\b", "(?:数据仓库)", "(?:数据湖)", "(?:维度建模)", "(?:湖仓一体)", "(?i)\\bOLAP\\b", "(?i)Doris", "(?i)ClickHouse", "(?i)StarRocks"]
+    },
+    {
+      "key": "big_data",
+      "name": "Spark / Flink / 大数据",
+      "category": "数据工程",
+      "technical": true,
+      "patterns": ["(?i)\\bSpark\\b", "(?i)\\bFlink\\b", "(?i)\\bHadoop\\b", "(?i)\\bHive\\b", "(?i)\\bKafka\\b", "(?i)Airflow", "(?i)DolphinScheduler", "(?:实时计算)", "(?:批处理)"]
+    },
+    {
+      "key": "automation_testing",
+      "name": "自动化测试",
+      "category": "测试工程",
+      "technical": true,
+      "patterns": ["(?:自动化测试)", "(?:测试开发)", "(?:测试平台)", "(?i)Pytest", "(?i)Selenium", "(?i)Appium", "(?i)JMeter", "(?i)JUnit", "(?:接口测试)", "(?:性能测试)"]
+    },
+    {
+      "key": "ci_cd",
+      "name": "CI/CD",
+      "category": "工程平台",
+      "technical": true,
+      "patterns": ["(?i)CI/CD", "(?i)Jenkins", "(?i)GitLab\\s*CI", "(?i)GitHub\\s*Actions", "(?i)持续集成", "(?i)持续交付"]
+    },
+    {
+      "key": "kubernetes",
+      "name": "Kubernetes / 容器平台",
+      "category": "云原生",
+      "technical": true,
+      "patterns": ["(?i)Kubernetes", "(?i)\\bK8s\\b", "(?:容器平台)", "(?:容器化)"]
+    },
+    {
+      "key": "observability",
+      "name": "监控与可观测性",
+      "category": "云原生",
+      "technical": true,
+      "patterns": ["(?i)Prometheus", "(?i)Grafana", "(?:监控告警)", "(?:可观测性)", "(?:日志监控)", "(?:链路追踪)"]
+    },
+    {
+      "key": "cloud_platform",
+      "name": "云平台",
+      "category": "云原生",
+      "technical": true,
+      "patterns": ["(?:阿里云)", "(?:腾讯云)", "(?:华为云)", "(?:公有云)", "(?i)AWS", "(?i)Azure", "(?i)GCP"]
+    },
+    {
+      "key": "iac",
+      "name": "IaC / 自动化运维",
+      "category": "云原生",
+      "technical": true,
+      "patterns": ["(?i)Terraform", "(?i)Pulumi", "(?i)Ansible", "(?i)\\bIaC\\b", "(?:自动化运维)", "(?i)Shell"]
+    },
+    {
+      "key": "communication",
+      "name": "沟通协作",
+      "category": "通用能力",
+      "technical": false,
+      "patterns": ["沟通", "协作", "团队合作", "跨团队"]
+    },
+    {
+      "key": "english",
+      "name": "英文技术文档",
+      "category": "通用能力",
+      "technical": false,
+      "patterns": ["英语", "英文", "(?i)CET-?[46]", "四级", "六级"]
+    }
+  ],
+  "families": {
+    "backend": {
+      "name": "后端开发",
+      "description": "服务端业务、接口、数据库、系统稳定性",
+      "role_patterns": ["后端开发", "后台开发", "服务端", "Java开发", "Spring", "Golang"],
+      "core_groups": [
+        {"name": "Python / Java / Go", "any": ["python", "java", "go"]},
+        {"name": "SQL / 数据库", "any": ["sql_database"]},
+        {"name": "后端框架 / API", "any": ["backend_api"]},
+        {"name": "Linux", "any": ["linux"]}
+      ]
+    },
+    "frontend": {
+      "name": "前端开发",
+      "description": "Web 界面、浏览器、组件和前端工程化",
+      "role_patterns": ["前端开发", "Web前端", "React", "Vue", "TypeScript", "HTML", "JavaScript"],
+      "core_groups": [
+        {"name": "JavaScript / TypeScript", "any": ["javascript_typescript"]},
+        {"name": "HTML / CSS", "any": ["html_css"]},
+        {"name": "React / Vue", "any": ["react_vue"]},
+        {"name": "浏览器 / HTTP", "any": ["browser_http"]}
+      ]
+    },
+    "algorithm": {
+      "name": "算法工程师",
+      "description": "机器学习、深度学习、数据建模与算法工程",
+      "role_patterns": ["算法工程师", "机器学习", "深度学习", "推荐算法", "NLP", "计算机视觉", "大模型", "AIGC"],
+      "core_groups": [
+        {"name": "Python / C++", "any": ["python", "c_cpp"]},
+        {"name": "机器学习基础", "any": ["machine_learning"]},
+        {"name": "数据分析 / 统计", "any": ["data_statistics"]},
+        {"name": "深度学习框架", "any": ["deep_learning", "pytorch_tensorflow"]}
+      ]
+    },
+    "embedded": {
+      "name": "嵌入式开发",
+      "description": "MCU、固件、驱动、实时系统和通信接口",
+      "role_patterns": ["嵌入式开发", "嵌入式软件", "单片机", "MCU", "RTOS", "固件", "ESP-IDF", "STM32"],
+      "core_groups": [
+        {"name": "C / C++", "any": ["c_cpp"]},
+        {"name": "MCU / ARM", "any": ["mcu_arm"]},
+        {"name": "通信接口 / 协议", "any": ["embedded_protocols"]},
+        {"name": "RTOS / 固件 / 嵌入式 Linux", "any": ["rtos", "firmware_driver", "embedded_linux"]}
+      ]
+    },
+    "data_analysis": {
+      "name": "数据分析",
+      "description": "业务分析、指标体系、BI、可视化与实验分析",
+      "role_patterns": ["数据分析师", "数据分析", "商业分析", "数据洞察", "Tableau", "Power BI", "FineBI", "Dashboard", "指标体系"],
+      "core_groups": [
+        {"name": "SQL / Python", "any": ["sql_database", "python"]},
+        {"name": "BI / 数据可视化", "any": ["data_visualization"]},
+        {"name": "统计与实验分析", "any": ["statistics_experiments", "data_statistics"]},
+        {"name": "业务分析 / 数据洞察", "any": ["data_statistics", "statistics_experiments"]}
+      ]
+    },
+    "data_engineering": {
+      "name": "数据开发 / 大数据",
+      "description": "ETL、数据仓库、实时计算、数据平台和数据管道",
+      "role_patterns": ["数据开发", "数据仓库", "数仓", "ETL", "Flink SQL", "Spark", "Hive", "Doris", "ClickHouse", "StarRocks", "湖仓一体"],
+      "core_groups": [
+        {"name": "SQL", "any": ["sql_database"]},
+        {"name": "Python / Java / Go", "any": ["python", "java", "go"]},
+        {"name": "Spark / Flink / 大数据", "any": ["big_data"]},
+        {"name": "ETL / 数据仓库", "any": ["etl_warehouse"]}
+      ]
+    },
+    "test_development": {
+      "name": "测试开发",
+      "description": "自动化测试、测试平台、质量工程和测试工具",
+      "role_patterns": ["测试开发", "自动化测试", "测试平台", "Selenium", "Pytest", "JMeter", "测试框架", "质量工程"],
+      "core_groups": [
+        {"name": "Python / Java / Go", "any": ["python", "java", "go"]},
+        {"name": "自动化测试", "any": ["automation_testing"]},
+        {"name": "接口 / 测试框架", "any": ["testing", "automation_testing", "browser_http"]},
+        {"name": "CI/CD", "any": ["ci_cd"]}
+      ]
+    },
+    "cloud_native_sre": {
+      "name": "云原生 / DevOps / SRE",
+      "description": "云平台、容器、CI/CD、可观测性和稳定性工程",
+      "role_patterns": ["SRE", "DevOps", "云原生", "Kubernetes", "K8s", "Terraform", "Prometheus", "Grafana", "CI/CD", "稳定性工程"],
+      "core_groups": [
+        {"name": "Linux", "any": ["linux"]},
+        {"name": "Kubernetes / 容器", "any": ["kubernetes", "docker"]},
+        {"name": "监控与可观测性", "any": ["observability"]},
+        {"name": "CI/CD / IaC", "any": ["ci_cd", "iac"]}
+      ]
+    }
+  }
+}
